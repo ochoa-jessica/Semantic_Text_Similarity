@@ -6,6 +6,8 @@
 
 ## Dataset
 <p>For the purpose of this demo, I embedded a set of 1700 questios from the ARCquestion classification dataset.</p>
+
+## Link to the Dataset
 [ARC Question Classification Dataset](https://allenai.org/data/arc-classification)
 
 ## Sentence Embeddings
