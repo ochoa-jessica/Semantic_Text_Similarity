@@ -1,8 +1,12 @@
 ## Interpreting Semantic Text Similarity 
 <p>In this demo, I test out a very simple approach to get a glimpse into context similarities picked up by the models when doing contextual search with simple vector math. For the purpose of this demo, I will be using a model from the sentence transformers library which has specifically been optimized for doing semantic textual similarity searches. The model creates 1024-dimensional embedding for each sentence passed to it, and the similarity between two such sentences can then be calculated by the cosine similarity between the corresponding two vectors.</p>
 
+## Sentence Transformers Library
+[Sentence Transformers](https://github.com/UKPLab/sentence-transformers)
+
 ## Dataset
 <p>For the purpose of this demo, I embedded a set of 1700 questios from the ARCquestion classification dataset.</p>
+[ARC Question Classification Dataset](https://allenai.org/data/arc-classification)
 
 ## Sentence Embeddings
 <p>With the help of sentence embeddings we can easily perform searches in our database of questions, lets say we've a database of 1700 questions, which we've embedded into a 1700 by 1024 matrix. The first step would be to L2 normalize each row, meaning we normalize each question vector to have a length of 1, such that the cosine similarity between A and B is simply the dot product of the two vectors. We can pretend that the first question in our dataset is our query, and try to find the closest matching entry from the rest of the questions.</p>
